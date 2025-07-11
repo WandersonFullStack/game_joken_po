@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(https://picsum.photos/1600/900/?landscape);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#rock {
+    background-color: #ff0000;
+}
+
+#paper {
+    background-color: #00ff00;
+}
+
+#scissors {
+    background-color: #0000ff;
+}
+
+p {
+    font-weight: bold;
+}
+
+.your-score span {
+    font-size: 2rem;
+    color: #00ffff;
+}
+
+.machine-score span {
+    font-size: 2rem;
+    color: #f4f8;
+}
